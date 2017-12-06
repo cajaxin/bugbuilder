@@ -35,6 +35,11 @@ int run (char *command, int *result){
     }else{              //Subprocess
         execvp(args[0], args);
     }
+    
+   printf("progama nao existe");
+   *result = 0;
+   return -1;
+
 
 
     return pid;
